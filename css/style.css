@@ -11,18 +11,38 @@ header {
     position: relative;
 }
 
+.style-wrap {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;    
+}
+
+.style-padding {
+    padding: 0 15px;
+}
+
 nav {
 	position: absolute; 
     width: 100%;
-    font-size: 1.25em;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+    background: rgb(202, 193, 193, 0.8);
+    padding: 10px 0 13px;
 }
 
 nav a {
-    color: white;
+    color: #6a4016;
+    border-bottom: 2px solid #6a4016;
+    margin: 0 10px;
 }
 
 nav a:hover {
-    color: yellow;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+nav .nav-link {
+    padding: 0;
 }
 
 .jumbotron-custom {
@@ -33,16 +53,13 @@ nav a:hover {
     min-height: 300px;
     height: 50vh;
     text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
 }
 
-.site-wrap {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;    
+.jumbotron-custom .lead {
+    font-weight: 400;
 }
-
-.site-padding {
-    padding: 0 15px;
-}
-
 
