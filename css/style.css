@@ -1,0 +1,48 @@
+html {
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background: rgb(202, 193, 193)
+}
+
+header {
+    position: relative;
+}
+
+nav {
+	position: absolute; 
+    width: 100%;
+    font-size: 1.25em;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.jumbotron-custom {
+    background: url("../images/lee-vine-portfolio-image-2.jpg");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    height: 50vh;
+    text-align: center;
+}
+
+.site-wrap {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;    
+}
+
+.site-padding {
+    padding: 0 15px;
+}
+
+
