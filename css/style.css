@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: rgb(202, 193, 193)
+    background: rgb(162, 159, 157);
 }
 
 header {
@@ -21,29 +21,56 @@ header {
     padding: 0 15px;
 }
 
-nav {
-	position: absolute; 
-    width: 100%;
-    font-size: 1em;
-    letter-spacing: 1.5px;
-    background: rgb(202, 193, 193, 0.8);
-    padding: 10px 0 13px;
+.display-4 {
+    font-weight: bold;
 }
 
-nav a {
-    color: #6a4016;
-    border-bottom: 2px solid #6a4016;
+#nav {
+	position: absolute; 
+    width: 100%;
+    font-size: 1.1em;
+    letter-spacing: 1.5px;
+    background: rgba(157, 156, 156, 0.9);
+    padding: 10px 0 7px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+#nav li a {
+    color: #615350;
     margin: 0 10px;
 }
 
-nav a:hover {
+#nav li a:hover {
     color: #fff;
-    border-bottom: 2px solid #fff;
 }
 
-nav .nav-link {
-    padding: 0;
+#nav .navbar-brand {
+    color: #615350;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  #nav .navbar-brand:hover {
+    color: #615350 !important;
+  }
+
+#nav .navbar-toggler {
+    color: #623b14;
+    border-color: #623b14;
+  }
+
+#nav .navbar-brand:hover {
+    color: #623b14; 
 }
+
+.navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+
+
 
 .jumbotron-custom {
     background: url("../images/lee-vine-portfolio-image-2.jpg");
@@ -63,3 +90,15 @@ nav .nav-link {
     font-weight: 400;
 }
 
+/* Media Queries for responsive modes */
+@media only screen and (max-width: 568px) {
+.display-4 {
+    font-size: 1.2em;
+}
+}
+
+@media only screen and (max-width: 450px) {
+    #nav .navbar-brand {
+        font-size: 1em;
+    }
+}

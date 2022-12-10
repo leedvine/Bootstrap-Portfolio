@@ -12,32 +12,51 @@
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
 
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <title>Lee Vine Portfolio Page - Using Bootstrap</title>
 </head>
 <body>
     <header> 
-      <nav>
-        <div class="style-wrap">
-          <div class="style-padding">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">ABOUT ME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">MY WORK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
-          </li>
-        </ul>
-          </nav>
+      <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <div class="navbar-brand">Lee Vine - Portfolio</div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
         </div>
       </div>
       <div class="jumbotron jumbotron-fluid jumbotron-custom">
         <div class="style-wrap">
           <div class="style-padding">
         <div class="container">
-          <h1 class="display-4">Hi, I'm Lee Vine</h1>
+          <h1 class="display-4">Hey there!</h1>
           <p class="lead">I'm the number one Front End Developer <span style="font-size: 9px;">in my village,</span> and master of disguise.</p>
         </div>
       </div>
