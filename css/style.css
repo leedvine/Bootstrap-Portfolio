@@ -1,6 +1,7 @@
 html {
     font-family: 'Mukta', sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -90,12 +91,45 @@ header {
     font-weight: 400;
 }
 
+.background-white {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 50px 10px;
+    box-sizing: border-box;
+    margin: 40px auto;
+}
+
+.container.background-white img {
+    width: 100%;
+    border-radius: 50px;
+  }
+
+.background-white h2 {
+    color: #623b14;
+    font-size: 1.2 rem;
+    margin: 0 0 25px;
+    letter-spacing: 1.5px;
+}
+
 /* Media Queries for responsive modes */
 @media only screen and (max-width: 568px) {
 .display-4 {
     font-size: 1.2em;
 }
 }
+
+@media only screen and (max-width: 992px) {
+    .col-hide-md {
+        display: none;
+    }
+    .background-white {
+        padding: 30px 10px;
+    }
+    .container.background-white img {
+        padding: 20px 0;
+      }
+    }
+
 
 @media only screen and (max-width: 450px) {
     #nav .navbar-brand {
