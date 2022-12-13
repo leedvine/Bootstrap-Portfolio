@@ -7,7 +7,7 @@
     --main-bg: rgb(162, 159, 157);
     --secondary: #fff;
     --main-color: #6f5740;
-    --secondary-bg: rgb(209, 164, 20, 0.8);
+    --secondary-bg: rgba(111, 87, 64, 0.7);
 }
 
 body {
@@ -77,6 +77,10 @@ header {
 
 .style-padding {
     padding: 0 15px;
+}
+
+.extra-padding {
+    padding: 0 30px;
 }
 
 /* Jumbotron image and overlay text */
