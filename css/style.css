@@ -1,11 +1,15 @@
-html {
+:root {
     font-family: 'Mukta', sans-serif;
     font-size: 16px;
     scroll-behavior: smooth;
+    --main-bg: rgb(162, 159, 157);
+    --secondary: #fff;
+    --main-color: #6f5740;
+    --secondary-bg: rgb(209, 164, 20, 0.8);
 }
 
 body {
-    background: rgb(162, 159, 157);
+    background: var(--main-bg);
 }
 
 header {
@@ -31,38 +35,38 @@ header {
     width: 100%;
     font-size: 1.1em;
     letter-spacing: 1.5px;
-    background: rgba(157, 156, 156, 0.9);
+    background: var(--main-bg);
     padding: 10px 0 7px;
     font-weight: bold;
     line-height: 1.2;
 }
 
 #nav li a {
-    color: #615350;
+    color: var(--main-color);
     margin: 0 10px;
 }
 
 #nav li a:hover {
-    color: #fff;
+    color: var(--secondary);
 }
 
 #nav .navbar-brand {
-    color: #615350;
+    color: var(--main-color);
     font-weight: bold;
     font-size: 1.5em;
   }
 
   #nav .navbar-brand:hover {
-    color: #615350 !important;
+    color: var(--main-color) !important;
   }
 
 #nav .navbar-toggler {
-    color: #623b14;
-    border-color: #623b14;
+    color: var(--main-color);
+    border-color: var(--main-color);
   }
 
 #nav .navbar-brand:hover {
-    color: #623b14; 
+    color: var(--main-color); 
 }
 
 .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
@@ -84,7 +88,7 @@ header {
     display: flex;
     align-items: center;
     font-weight: bold;
-    color: white;
+    color: var(--secondary);
 }
 
 .jumbotron-custom .lead {
@@ -92,7 +96,7 @@ header {
 }
 
 .background-white {
-    background-color: #fff;
+    background-color: var(--secondary);
     border-radius: 50px;
     padding: 50px 10px;
     box-sizing: border-box;
@@ -105,10 +109,43 @@ header {
   }
 
 .background-white h2 {
-    color: #623b14;
+    color: var(--main-color);
     font-size: 1.2 rem;
     margin: 0 0 25px;
     letter-spacing: 1.5px;
+}
+
+
+
+#portfolioProject1, #portfolioProject2, #portfolioProject3, #portfolioProject4 {
+	background-image: url("https://images.pexels.com/photos/271667/pexels-photo-271667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	grid-column: 1 / span 3;
+	position: relative;
+	border-radius: 30px;
+	border: var(--box-border);
+	font-size: 2em;
+    height: 200px;
+}
+
+.image-over {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.text-over {
+	position: absolute;
+	width: 100%;
+	background: var(--secondary-bg);
+	bottom: 0;
+	color: var(--secondary);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 }
 
 /* Media Queries for responsive modes */
