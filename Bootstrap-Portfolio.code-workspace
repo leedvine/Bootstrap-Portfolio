@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Course-Work/week-3/04-bootstrap-portfolio-lesson/challenge"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Bootstrap-Portfolio"
+	}
+}

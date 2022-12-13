@@ -1,3 +1,5 @@
+/* root defaults and Vars */
+
 :root {
     font-family: 'Mukta', sans-serif;
     font-size: 16px;
@@ -10,25 +12,18 @@
 
 body {
     background: var(--main-bg);
+    padding: 0 0 60px;
 }
-
+/* Header relative to allow image with text and nav overlay */
 header {
     position: relative;
-}
-
-.style-wrap {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;    
-}
-
-.style-padding {
-    padding: 0 15px;
 }
 
 .display-4 {
     font-weight: bold;
 }
+
+/* Navigation styling */
 
 #nav {
 	position: absolute; 
@@ -74,8 +69,17 @@ header {
     padding-left: 15px !important;
   }
 
+  .style-wrap {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;    
+}
 
+.style-padding {
+    padding: 0 15px;
+}
 
+/* Jumbotron image and overlay text */
 
 .jumbotron-custom {
     background: url("../images/lee-vine-portfolio-image-2.jpg");
@@ -117,19 +121,36 @@ header {
 
 
 
+/* Portfolio Bootsrap columns area */
+
 #portfolioProject1, #portfolioProject2, #portfolioProject3, #portfolioProject4 {
 	background-image: url("https://images.pexels.com/photos/271667/pexels-photo-271667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	grid-column: 1 / span 3;
 	position: relative;
 	border-radius: 30px;
 	border: var(--box-border);
-	font-size: 2em;
+	font-size: 1.2em;
     height: 200px;
 }
 
+#portfolioProject2 {
+    background-image: url("https://marvel-b1-cdn.bc0a.com/f00000000026007/resilienteducator.com/wp-content/uploads/2012/11/AdobeStock_60467600_cup.jpg");
+    margin-top: 30px;
+}
+
+#portfolioProject3 {
+    background-image: url("https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    margin-top: 30px;
+}
+
+#portfolioProject4 {
+    background-image: url("https://cdn-production.checkfront.com/wp-content/uploads/2022/05/about-online-reservation-system.jpg");
+    margin-top: 30px;
+}
+
+/* Allowing full div to be used as links in html */
 .image-over {
 	position: absolute;
 	height: 100%;
@@ -146,6 +167,11 @@ header {
 	box-sizing: border-box;
 	border-bottom-left-radius: 25px;
 	border-bottom-right-radius: 25px;
+}
+
+  #contact .container.background-white img {
+    max-width: 60px;
+    padding: 0;
 }
 
 /* Media Queries for responsive modes */
