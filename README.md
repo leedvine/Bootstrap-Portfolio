@@ -11,9 +11,7 @@ This README.md file will be updated as the page becomes a real portfolio and cea
 ### Screenshots showing Bootstrap areas of site
 
 ![](./images/screenshot1.jpg)
-<br><br>
 
-![](./images/screenshot2.jpg)
 <br><br>
 
 ### Links
