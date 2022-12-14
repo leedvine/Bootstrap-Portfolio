@@ -10,10 +10,10 @@ This README.md file will be updated as the page becomes a real portfolio and cea
 
 ### Screenshots showing Bootstrap areas of site
 
-![](../Bootstrap-Portfolio/images/screenshot1.jpg)
+![](./images/screenshot1.jpg)
 <br><br>
 
-![](../Bootstrap-Portfolio/images/screenshot2.jpg)
+![](./images/screenshot2.jpg)
 <br><br>
 
 ### Links
